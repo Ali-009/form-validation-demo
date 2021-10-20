@@ -46,6 +46,8 @@ passwordElement.addEventListener('input', (e) => {
 
   if(e.target.validity.valueMissing){
     styleInvalidField(e.target, 'This field is required');
+  } else {
+    styleValidField(e.target);
   }
 
   if(passwordConfirmElement.validity.patternMismatch){
