@@ -1,0 +1,55 @@
+
+body{
+  height: 90vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+  align-items: flex-start;
+}
+
+form > div{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+
+  align-items: flex-start;
+
+  border: thin solid black;
+  padding: 10px;
+}
+
+div > label{
+  flex-grow: 0;
+}
+
+button{
+  width: 30%;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.field-container{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+  flex-grow: 1;
+}
+
+.checkmark{
+  width: 30px;
+  height: 30px;
+
+  max-width: 0;
+}

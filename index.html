@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form-validation</title>
+    <link rel="stylesheet" href="./form-validation.css">
+  </head>
+  <body>
+    <form novalidate>
+      <div id="mail-container">
+        <label for="mail">Email: </label>
+        <div class="field-container">
+          <input type="email" id="mail" name="mail" required>
+          <div class="error"></div>
+        </div>
+        <img class="checkmark" src="./checkmark.png" alt="checkmark">
+      </div>
+
+      <div id="country-container">
+        <label for="country">Country: </label>
+        <div class="field-container">
+          <input type="text" id="country" name="country" required>
+          <div class="error"></div>
+        </div>
+        <img class="checkmark" src="./checkmark.png" alt="checkmark">
+      </div>
+
+      <div id="zip-container">
+        <label for="zip">ZIP Code: </label>
+        <div class="field-container">
+          <input type="text" id="zip" name="zip" required>
+          <div class="error"></div>
+        </div>
+        <img class="checkmark" src="./checkmark.png" alt="checkmark">
+      </div>
+
+      <div id="pass-container">
+        <label for="pass">Password: </label>
+        <div class="field-container">
+          <input type="password" id="pass" name="pass" required>
+          <div class="error"></div>
+        </div>
+        <img class="checkmark" src="./checkmark.png" alt="checkmark">
+      </div>
+
+      <div id="passconfirm-container">
+        <label for="passconfirm">Confirm Password: </label>
+        <div class="field-container">
+          <input type="password" id="passconfirm" name="passconfirm" pattern='' required>
+          <div class="error"></div>
+        </div>
+        <img class="checkmark" src="./checkmark.png" alt="checkmark">
+      </div>
+
+      <button id="submit">Submit</button>
+    </form>
+    <script src="./form-validation.js"></script>
+  </body>
+</html>
